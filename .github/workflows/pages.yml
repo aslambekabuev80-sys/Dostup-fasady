@@ -21,7 +21,7 @@ jobs:
       - name: Rebuild site package
         run: |
           mkdir -p _site
-          cat catalog-parts/catalog.part.* > catalog.tar.gz
+          cat catalog-parts-small/catalog.part.* > catalog.tar.gz
           tar -xzf catalog.tar.gz -C _site
       - name: Configure Pages
         uses: actions/configure-pages@v5
